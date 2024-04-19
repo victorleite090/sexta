@@ -1,0 +1,39 @@
+### Create
+
+POST http://localhost:3333/book
+Content-Type: application/json
+
+{
+    "name": "",
+    "description": "",
+    "publishingCompany": "",
+    "shelf": {
+        "id": "a1d83353-8df5-44bd-bb26-9792744f4777"
+    }
+}
+
+### List By Id
+
+GET http://localhost:3333/book/<id>
+
+### List All
+
+GET http://localhost:3333/book
+
+### Update
+
+PUT http://localhost:3333/book/<id>
+Content-Type: application/json
+
+{
+    "name": "",
+    "description": "",
+    "publishingCompany": "",
+    "shelf": {
+        "id": ""
+    }
+}
+
+### Delete
+
+DELETE http://localhost:3333/book/<id>

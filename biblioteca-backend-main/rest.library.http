@@ -1,0 +1,41 @@
+### Create
+
+POST http://localhost:3333/library
+Content-Type: application/json
+
+
+
+
+{
+    "name": "a22222bc",
+    "cnpj": "78.345.678/9123-23",
+    "logo": null
+
+}
+
+### List By Id
+
+GET http://localhost:3333/library/aaaa-5555-aaaa-555
+
+### List All
+
+GET http://localhost:3333/library
+
+### Update
+
+PUT http://localhost:3333/library/<id>
+Content-Type: application/json
+
+{
+     "id": "",
+    "name": "",
+    "cnpj": "",
+    "logo": "",
+    "shelf": {
+        "id": ""
+    }
+}
+
+### Delete
+
+DELETE http://localhost:3333/library/<id>

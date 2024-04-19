@@ -1,0 +1,40 @@
+### Create
+
+POST http://localhost:3333/shelf
+Content-Type: application/json
+
+{
+    "name": "cedup",
+    "code": "a1",
+    "library": {
+        "id": "21ff2cb6-a2ea-4232-934a-ce24f70f0db3"
+
+    }
+
+}
+
+### List By Id
+
+GET http://localhost:3333/shelf/<id>
+
+### List All
+
+GET http://localhost:3333/shelf
+
+### Update
+
+PUT http://localhost:3333/shelf/<id>
+Content-Type: application/json
+
+{
+    "name": "",
+    "code": "",
+    "library": {
+        "id": ""
+
+    }
+}
+
+### Delete
+
+DELETE http://localhost:3333/shelf/<id>
